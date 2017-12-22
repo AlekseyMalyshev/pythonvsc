@@ -1,3 +1,4 @@
+#!/usr/local/bin/node
 
 var VEC_LEN = 1000000
 var AVERAGING = 1000
@@ -15,6 +16,7 @@ var c = 0.0;
 var start = new Date().getTime();
 
 for (var j = 0; j < AVERAGING; ++j) {
+  c = 0;
   for (var i = 0; i < VEC_LEN; ++i) {
     c += A[i] * B[i];
   }
